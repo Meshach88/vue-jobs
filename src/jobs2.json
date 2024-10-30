@@ -15,6 +15,20 @@
       "id": "1"
     },
     {
+      "id": "2",
+      "title": "Front-End Engineer (Vue)",
+      "type": "Full-Time",
+      "description": "Join our team as a Front-End Developer in sunny Miami, FL. We are looking for a motivated individual with a passion for crafting beautiful and responsive web applications. Experience with UI/UX design principles and a strong attention to detail are highly desirable.",
+      "location": "Miami, FL",
+      "salary": "$70K - $80K",
+      "company": {
+        "name": "Veneer Solutions",
+        "description": "Veneer Solutions is a creative agency specializing in digital design and development. Our team is dedicated to pushing the boundaries of creativity and innovation to deliver exceptional results for our clients.",
+        "contactEmail": "contact@loremipsum.com",
+        "contactPhone": "555-555-5555"
+      }
+    },
+    {
       "id": "3",
       "title": "Vue.js Developer",
       "type": "Full-Time",
@@ -68,104 +82,6 @@
         "description": "Port Solutions is a leading technology company specializing in software development and digital marketing. We are committed to providing our clients with cutting-edge solutions and our employees with a supportive and rewarding work environment.",
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
-      }
-    },
-    {
-      "id": "07ca",
-      "title": "Software Developer",
-      "type": "Full-Time",
-      "location": "Miami, Florida",
-      "description": "A very challenging job",
-      "salary": "$70K - $80K",
-      "company": {
-        "name": "Netwick",
-        "description": "A software company",
-        "contactEmail": "email@email.com",
-        "contactPhone": "455555234"
-      }
-    },
-    {
-      "id": "232a",
-      "title": "Software Developer",
-      "type": "Full-Time",
-      "location": "Miami, Florida",
-      "description": "A very challenging job",
-      "salary": "$70K - $80K",
-      "company": {
-        "name": "Netwick",
-        "description": "A software company",
-        "contactEmail": "email@email.com",
-        "contactPhone": "455555234"
-      }
-    },
-    {
-      "id": "6cf6",
-      "title": "Software Developer",
-      "type": "Full-Time",
-      "location": "Miami, Florida",
-      "description": "A very challenging job",
-      "salary": "$70K - $80K",
-      "company": {
-        "name": "Netwick",
-        "description": "A software company",
-        "contactEmail": "email@email.com",
-        "contactPhone": "455555234"
-      }
-    },
-    {
-      "id": "21b9",
-      "title": "Software Developer",
-      "type": "Full-Time",
-      "location": "Miami, Florida",
-      "description": "A very challenging job",
-      "salary": "$70K - $80K",
-      "company": {
-        "name": "Netwick",
-        "description": "A software company",
-        "contactEmail": "email@email.com",
-        "contactPhone": "455555234"
-      }
-    },
-    {
-      "id": "170b",
-      "title": "Software Developer",
-      "type": "Full-Time",
-      "location": "Miami, Florida",
-      "description": "A very lucrative job",
-      "salary": "$50K - $60K",
-      "company": {
-        "name": "Micmau Technologies",
-        "description": "A software company",
-        "contactEmail": "email@email.com",
-        "contactPhone": "555444333"
-      }
-    },
-    {
-      "id": "c93d",
-      "title": "Senior Developer",
-      "type": "Full-Time",
-      "location": "Nebraska",
-      "description": "A senior developer",
-      "salary": "$100K - $125K",
-      "company": {
-        "name": "Nelvet",
-        "description": "A software company",
-        "contactEmail": "gmail@gmail.com",
-        "contactPhone": "23434533"
-      }
-    },
-    {
-      "id": "3fe1",
-      "title": "Vue Developer",
-      "type": "Full-Time",
-      "location": "Indiana",
-      "description": "Florida",
-      "salary": "$60K - $70K",
-      "company": {
-        "name": "Macber",
-        "description": "An international software company",
-        "contactEmail": "fset@gmail.com",
-        "contactPhone": "222333444"
       }
     }
   ]

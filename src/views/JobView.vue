@@ -12,6 +12,7 @@ const router = useRouter();
 const toast = useToast();
 
 const jobId = route.params.id;
+const url = 'http://localhost:4000'
 
 const state = reactive({
     job: [],
@@ -22,7 +23,8 @@ const deleteJob = async () => {
     try {
         const confirm = window.confirm('Are you sure you want to delete this job?')
         if (confirm) {
-            await axios.delete(`/api/jobs/${jobId}`)
+            // await axios.delete(`/api/jobs/${jobId}`)
+            await axios.delete(url+'/api/jobs/delete',{id:jobId})
             toast.success("Job Deleted Succesfully")
             router.push('/jobs')
         }
@@ -36,8 +38,10 @@ const deleteJob = async () => {
 
 onMounted(async () => {
     try {
-        const response = await axios.get(`/api/jobs/${jobId}`);
-        state.job = response.data;
+        // const response = await axios.get(`/api/jobs/${jobId}`);
+        const response = await axios.get(url + '/api/jobs/list')
+        state.job = response.data.data.find((item)=>item._id == jobId);
+        // console.log(state.job)
     } catch (error) {
         console.error('Error fetching job', error);
     } finally {
@@ -92,7 +96,7 @@ onMounted(async () => {
 
                         <h3 class="text-xl">Contact Email:</h3>
 
-                        <p class="my-2 bg-green-100 p-2 font-bold">
+                        <p class="my-2 bg-green-100 p-2 font-bold text-xs">
                             {{ state.job.company.contactEmail }}
                         </p>
 

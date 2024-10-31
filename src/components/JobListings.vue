@@ -12,6 +12,7 @@ defineProps({
         default:false
     }
 })
+const url = 'http://localhost:4000'
 // const jobs = ref([])
 const state = reactive({
     jobs:[],
@@ -20,8 +21,11 @@ const state = reactive({
 
 onMounted(async () => {
     try {
-        const response = await axios.get('/api/jobs');
-        state.jobs = response.data;
+        // const response = await axios.get('/api/jobs');
+        const response = await axios.get(url+'/api/jobs/list')
+        state.jobs = response.data.data;
+        // console.log(state.jobs.length)
+        
     } catch (error) {
         console.error('Error fetching jobs', error);
     } finally{

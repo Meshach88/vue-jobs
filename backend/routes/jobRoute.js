@@ -10,7 +10,7 @@ const jobRouter = express.Router();
 
 jobRouter.get("/list", viewJobs);
 jobRouter.post(`/add`, addJob);
-jobRouter.put(`/edit`, editJob);
+jobRouter.put(`/edit/:id`, editJob);
 jobRouter.delete(`/delete`, deleteJob);
 
 

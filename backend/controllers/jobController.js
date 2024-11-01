@@ -24,15 +24,26 @@ const addJob = async (req, res) => {
 
   try {
     await job.save();
-    res.json({ success: true, data:job, message: "Job Added" });
+    res.json({ success: true, data:job, message: "Job Added Successfully" });
   } catch (error) {
     console.log(error);
-    res.json({ success: false, message: "Error" });
+    res.json({ success: false, message: "Job Not Added" });
   }
 };
 
 // edit jobs
-const editJob = async () => {};
+const editJob = async (req,res) => {
+  try {
+    await jobModel.findByIdAndUpdate(req.params.id, req.body.updatedJob)
+    res.json({success:true, message:"Job Updated Successfully"})
+  } catch (error) {
+    console.log(error);
+    res.json({success:false, message:"Job Not Updated"})
+    
+    
+  }
+  
+};
 
 // delete jobs
 const deleteJob = async (req, res) => {
@@ -42,7 +53,7 @@ const deleteJob = async (req, res) => {
     res.json({success:true, message:"Job Deleted"})
   } catch (error) {
     console.log(error);
-    res.json({success:false, message:"Error"})
+    res.json({success:false, message:"Error Deleting Job"})
   }
 
 };
